@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TableRow>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="性别："
+        android:textSize="25sp"
+        />
+        <RadioGroup
+            android:id="@+id/rg"
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal">
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/male"
+                android:text="男"
+                android:checked="true"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/female"
+                android:text="女"/>
+
+        </RadioGroup>
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="喜欢的颜色:"
+            android:textSize="25sp"/>
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            >
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="红色"
+                android:checked="true"
+                android:id="@+id/red"/>
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="蓝色"
+                android:checked="false"
+                android:id="@+id/blue"/>
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="绿色"
+                android:checked="false"
+                android:id="@+id/green"/>
+
+        </LinearLayout>
+    </TableRow>
+    <TableRow>
+
+          <TextView
+            android:id="@+id/show"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"/>
+          <TextView
+              android:layout_height="wrap_content"
+              android:layout_width="wrap_content"
+              android:text="您喜欢的颜色是："/>
+
+          <TextView
+              android:id="@+id/show1"
+              android:layout_height="wrap_content"
+              android:layout_width="wrap_content"/>
+
+    </TableRow>
+
+</TableLayout>
