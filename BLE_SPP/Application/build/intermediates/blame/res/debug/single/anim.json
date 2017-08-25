@@ -1,0 +1,66 @@
+[
+    {
+        "merged": "D:\\myFile\\BLE_SPP\\Application\\build\\intermediates\\res\\merged\\debug\\anim\\design_snackbar_in.xml",
+        "source": "C:\\Users\\uidp5437\\.android\\build-cache\\b80f675d19fa3ab29d87919a2051df9236b5ea68\\output\\res\\anim\\design_snackbar_in.xml"
+    },
+    {
+        "merged": "D:\\myFile\\BLE_SPP\\Application\\build\\intermediates\\res\\merged\\debug\\anim\\abc_popup_exit.xml",
+        "source": "C:\\Users\\uidp5437\\.android\\build-cache\\78aad3809c0cad9fab3e744d4cf9b49608e14943\\output\\res\\anim\\abc_popup_exit.xml"
+    },
+    {
+        "merged": "D:\\myFile\\BLE_SPP\\Application\\build\\intermediates\\res\\merged\\debug\\anim\\abc_grow_fade_in_from_bottom.xml",
+        "source": "C:\\Users\\uidp5437\\.android\\build-cache\\78aad3809c0cad9fab3e744d4cf9b49608e14943\\output\\res\\anim\\abc_grow_fade_in_from_bottom.xml"
+    },
+    {
+        "merged": "D:\\myFile\\BLE_SPP\\Application\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_in_top.xml",
+        "source": "C:\\Users\\uidp5437\\.android\\build-cache\\78aad3809c0cad9fab3e744d4cf9b49608e14943\\output\\res\\anim\\abc_slide_in_top.xml"
+    },
+    {
+        "merged": "D:\\myFile\\BLE_SPP\\Application\\build\\intermediates\\res\\merged\\debug\\anim\\design_bottom_sheet_slide_in.xml",
+        "source": "C:\\Users\\uidp5437\\.android\\build-cache\\b80f675d19fa3ab29d87919a2051df9236b5ea68\\output\\res\\anim\\design_bottom_sheet_slide_in.xml"
+    },
+    {
+        "merged": "D:\\myFile\\BLE_SPP\\Application\\build\\intermediates\\res\\merged\\debug\\anim\\abc_shrink_fade_out_from_bottom.xml",
+        "source": "C:\\Users\\uidp5437\\.android\\build-cache\\78aad3809c0cad9fab3e744d4cf9b49608e14943\\output\\res\\anim\\abc_shrink_fade_out_from_bottom.xml"
+    },
+    {
+        "merged": "D:\\myFile\\BLE_SPP\\Application\\build\\intermediates\\res\\merged\\debug\\anim\\abc_fade_out.xml",
+        "source": "C:\\Users\\uidp5437\\.android\\build-cache\\78aad3809c0cad9fab3e744d4cf9b49608e14943\\output\\res\\anim\\abc_fade_out.xml"
+    },
+    {
+        "merged": "D:\\myFile\\BLE_SPP\\Application\\build\\intermediates\\res\\merged\\debug\\anim\\design_snackbar_out.xml",
+        "source": "C:\\Users\\uidp5437\\.android\\build-cache\\b80f675d19fa3ab29d87919a2051df9236b5ea68\\output\\res\\anim\\design_snackbar_out.xml"
+    },
+    {
+        "merged": "D:\\myFile\\BLE_SPP\\Application\\build\\intermediates\\res\\merged\\debug\\anim\\abc_popup_enter.xml",
+        "source": "C:\\Users\\uidp5437\\.android\\build-cache\\78aad3809c0cad9fab3e744d4cf9b49608e14943\\output\\res\\anim\\abc_popup_enter.xml"
+    },
+    {
+        "merged": "D:\\myFile\\BLE_SPP\\Application\\build\\intermediates\\res\\merged\\debug\\anim\\abc_fade_in.xml",
+        "source": "C:\\Users\\uidp5437\\.android\\build-cache\\78aad3809c0cad9fab3e744d4cf9b49608e14943\\output\\res\\anim\\abc_fade_in.xml"
+    },
+    {
+        "merged": "D:\\myFile\\BLE_SPP\\Application\\build\\intermediates\\res\\merged\\debug\\anim\\text_scale_in.xml",
+        "source": "D:\\myFile\\BLE_SPP\\Application\\src\\main\\res\\anim\\text_scale_in.xml"
+    },
+    {
+        "merged": "D:\\myFile\\BLE_SPP\\Application\\build\\intermediates\\res\\merged\\debug\\anim\\design_bottom_sheet_slide_out.xml",
+        "source": "C:\\Users\\uidp5437\\.android\\build-cache\\b80f675d19fa3ab29d87919a2051df9236b5ea68\\output\\res\\anim\\design_bottom_sheet_slide_out.xml"
+    },
+    {
+        "merged": "D:\\myFile\\BLE_SPP\\Application\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_in_bottom.xml",
+        "source": "C:\\Users\\uidp5437\\.android\\build-cache\\78aad3809c0cad9fab3e744d4cf9b49608e14943\\output\\res\\anim\\abc_slide_in_bottom.xml"
+    },
+    {
+        "merged": "D:\\myFile\\BLE_SPP\\Application\\build\\intermediates\\res\\merged\\debug\\anim\\text_scale_out.xml",
+        "source": "D:\\myFile\\BLE_SPP\\Application\\src\\main\\res\\anim\\text_scale_out.xml"
+    },
+    {
+        "merged": "D:\\myFile\\BLE_SPP\\Application\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_out_bottom.xml",
+        "source": "C:\\Users\\uidp5437\\.android\\build-cache\\78aad3809c0cad9fab3e744d4cf9b49608e14943\\output\\res\\anim\\abc_slide_out_bottom.xml"
+    },
+    {
+        "merged": "D:\\myFile\\BLE_SPP\\Application\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_out_top.xml",
+        "source": "C:\\Users\\uidp5437\\.android\\build-cache\\78aad3809c0cad9fab3e744d4cf9b49608e14943\\output\\res\\anim\\abc_slide_out_top.xml"
+    }
+]

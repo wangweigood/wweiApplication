@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="C:\Users\uidp5437\.android\build-cache\2cfc389a0f7008d2d5e5d2f07c052a1339b3a470\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="88246166d5afb106f532f6e6deae683c66b42c89">
+        <dex dex="D:\myFile\BLE_SPP\Application\build\intermediates\transforms\dex\debug\folders\1000\10\classes_4c57c28f5eda9ef6e2974d1b934af230559c8226\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\uidp5437\.android\build-cache\347f5d413e1ffbbadb8b415ae7c99e4363ba4596\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="9935891f23923f39d002087085d9696568a9f657">
+        <dex dex="D:\myFile\BLE_SPP\Application\build\intermediates\transforms\dex\debug\folders\1000\10\classes_6c6be59763c280090a37137f9f375a9c0597dde5\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\uidp5437\.android\build-cache\b80f675d19fa3ab29d87919a2051df9236b5ea68\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="6a022bf00ccd0948a8180c505e8e458bbddd43a6">
+        <dex dex="D:\myFile\BLE_SPP\Application\build\intermediates\transforms\dex\debug\folders\1000\10\classes_1d40d70ed9659aeecae2189b4077981f221e804f\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\uidp5437\.android\build-cache\78aad3809c0cad9fab3e744d4cf9b49608e14943\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="47471eb19df288158b00b8d9cfa41bce7373f5cc">
+        <dex dex="D:\myFile\BLE_SPP\Application\build\intermediates\transforms\dex\debug\folders\1000\10\classes_cb2c30e16ebbef94098125e383e15bdd447e0808\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\uidp5437\.android\build-cache\45766351294a6215d5442166181c0046e8d1ec5d\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="c4f45092eee6cdf1a5dbd597b2b6819be652ce2e">
+        <dex dex="D:\myFile\BLE_SPP\Application\build\intermediates\transforms\dex\debug\folders\1000\10\classes_253d67c2c1f4ef5744ef098dadfb139000ee2f4e\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\uidp5437\.android\build-cache\2572ec6f0f2fadb32b9a1e72a8076a55af7a96b2\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="cddcd0fb93bc70e27325f2f715b2710332004ebb">
+        <dex dex="D:\myFile\BLE_SPP\Application\build\intermediates\transforms\dex\debug\folders\1000\10\classes_29c528b4ca3837697947b9c94adb4e5773ee7957\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\uidp5437\.android\build-cache\719a9251fd2fdddb4ae8b2a5db3a5abde16d6df0\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="8df0e365e40beb151bc42dee20817721a6cab7b0">
+        <dex dex="D:\myFile\BLE_SPP\Application\build\intermediates\transforms\dex\debug\folders\1000\10\classes_b899cc99a5d9b8747c0f4f218c3324fa164dc2f2\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\uidp5437\.android\build-cache\d4788ea423cd5ada2c1422718a607877a6c056e2\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="327f68d58bb39fb8b585150596b313541f8fdb87">
+        <dex dex="D:\myFile\BLE_SPP\Application\build\intermediates\transforms\dex\debug\folders\1000\10\classes_e7334a5a564f06ba3ebcafae435cac1404feb451\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\SDK1\extras\android\m2repository\com\android\support\support-annotations\26.0.0-alpha1\support-annotations-26.0.0-alpha1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="023ee503b631f69511e335a061ea008f8da60f40">
+        <dex dex="D:\myFile\BLE_SPP\Application\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-26.0.0-alpha1_77e38989f06c5444786a92ea731c4d19165ebf4b\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\uidp5437\.android\build-cache\626b66c64b33db7ddf184e751f6b626969c218ae\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="2e92aa0163544a804a0b34f169ca61801770839a">
+        <dex dex="D:\myFile\BLE_SPP\Application\build\intermediates\transforms\dex\debug\folders\1000\10\classes_d48c378c8e0ec45c67e04bffe3f1402d2d09c590\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\uidp5437\.android\build-cache\05ecd668831fb3d30d26d37193547070deb27090\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="fcd01fd11233459f546c437ec927e9b61bf7caf1">
+        <dex dex="D:\myFile\BLE_SPP\Application\build\intermediates\transforms\dex\debug\folders\1000\10\classes_b360c8936c6b51c2091932f6525c19b652693a6b\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\uidp5437\.android\build-cache\78678efabea200db84d9bcce159abf04d01826cd\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="4add8aa95c9f4e9a2ad64b7e2bf08e97e28955c1">
+        <dex dex="D:\myFile\BLE_SPP\Application\build\intermediates\transforms\dex\debug\folders\1000\10\classes_f354b2efe3da550e9d455192cac5d057aba64fd8\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\myFile\BLE_SPP\Application\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="d615826bde41e93a3131cbf2acb3f95f63cbde1f">
+        <dex dex="D:\myFile\BLE_SPP\Application\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_c2f94df039462ca83260dc32e8f4e8289b994fd2\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\uidp5437\.android\build-cache\f96ce3eb5a3bb8011def74311a493c06749322eb\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="18d31838aa4fcc768a8a0516e22cc13b94655d89">
+        <dex dex="D:\myFile\BLE_SPP\Application\build\intermediates\transforms\dex\debug\folders\1000\10\classes_3332f37abaf8dddfd023aa453d4860dc19df320c\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\uidp5437\.android\build-cache\d4788ea423cd5ada2c1422718a607877a6c056e2\output\jars\libs\internal_impl-24.1.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="ca74722504f90166103d01edcdfdb93192eb1cba">
+        <dex dex="D:\myFile\BLE_SPP\Application\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.1.1_ffcec398a4982b9dbae5b66fb3dc48e328062c1a\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\myFile\BLE_SPP\Application\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
+        <dex dex="D:\myFile\BLE_SPP\Application\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_310347c5aedd4abf7f9821865a7b8bd3a59eea0c\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\uidp5437\.android\build-cache\c2591804b6b10de219d72785161e9419b878745a\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="D:\myFile\BLE_SPP\Application\build\intermediates\transforms\dex\debug\folders\1000\10\classes_c8ab71b0762a09446566e4e5b631fc9bbd002fcf\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\uidp5437\.android\build-cache\149f1a195c324a3f6c157ca8034abdf8b0d4d72d\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="952944218ecedea1554a513dec0c14d570642843">
+        <dex dex="D:\myFile\BLE_SPP\Application\build\intermediates\transforms\dex\debug\folders\1000\10\classes_0361bc3a320f999209e2c92e1d05e0f8a6796933\classes.dex" />
+    </item>
+
+</items>

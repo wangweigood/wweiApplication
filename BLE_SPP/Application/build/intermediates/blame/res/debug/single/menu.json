@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "D:\\myFile\\BLE_SPP\\Application\\build\\intermediates\\res\\merged\\debug\\menu\\gatt_services.xml",
+        "source": "D:\\myFile\\BLE_SPP\\Application\\src\\main\\res\\menu\\gatt_services.xml"
+    },
+    {
+        "merged": "D:\\myFile\\BLE_SPP\\Application\\build\\intermediates\\res\\merged\\debug\\menu\\main.xml",
+        "source": "D:\\myFile\\BLE_SPP\\Application\\src\\main\\res\\menu\\main.xml"
+    }
+]

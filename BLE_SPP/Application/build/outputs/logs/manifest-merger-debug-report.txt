@@ -1,0 +1,177 @@
+-- Merging decision tree log ---
+manifest
+ADDED from D:\myFile\BLE_SPP\Application\src\main\AndroidManifest.xml:18:1-85:12
+	package
+		ADDED from D:\myFile\BLE_SPP\Application\src\main\AndroidManifest.xml:19:5-44
+	android:versionName
+		ADDED from D:\myFile\BLE_SPP\Application\src\main\AndroidManifest.xml:21:5-30
+		INJECTED from D:\myFile\BLE_SPP\Application\src\main\AndroidManifest.xml
+		INJECTED from D:\myFile\BLE_SPP\Application\src\main\AndroidManifest.xml
+	android:versionCode
+		ADDED from D:\myFile\BLE_SPP\Application\src\main\AndroidManifest.xml:20:5-28
+		INJECTED from D:\myFile\BLE_SPP\Application\src\main\AndroidManifest.xml
+		INJECTED from D:\myFile\BLE_SPP\Application\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from D:\myFile\BLE_SPP\Application\src\main\AndroidManifest.xml:18:11-69
+uses-permission#android.permission.BLUETOOTH_PRIVILEGED
+ADDED from D:\myFile\BLE_SPP\Application\src\main\AndroidManifest.xml:30:5-79
+	android:name
+		ADDED from D:\myFile\BLE_SPP\Application\src\main\AndroidManifest.xml:30:22-76
+uses-permission#android.permission.ACCESS_COARSE_LOCATION
+ADDED from D:\myFile\BLE_SPP\Application\src\main\AndroidManifest.xml:31:5-81
+	android:name
+		ADDED from D:\myFile\BLE_SPP\Application\src\main\AndroidManifest.xml:31:22-78
+uses-permission#android.permission.ACCESS_FINE_LOCATION
+ADDED from D:\myFile\BLE_SPP\Application\src\main\AndroidManifest.xml:32:5-79
+	android:name
+		ADDED from D:\myFile\BLE_SPP\Application\src\main\AndroidManifest.xml:32:22-76
+uses-permission#android.permission.BLUETOOTH_ADMIN
+ADDED from D:\myFile\BLE_SPP\Application\src\main\AndroidManifest.xml:33:5-74
+	android:name
+		ADDED from D:\myFile\BLE_SPP\Application\src\main\AndroidManifest.xml:33:22-71
+uses-permission#android.permission.BLUETOOTH
+ADDED from D:\myFile\BLE_SPP\Application\src\main\AndroidManifest.xml:34:5-68
+	android:name
+		ADDED from D:\myFile\BLE_SPP\Application\src\main\AndroidManifest.xml:34:22-65
+uses-permission#android.permission.MOUNT_UNMOUNT_FILESYSTEMS
+ADDED from D:\myFile\BLE_SPP\Application\src\main\AndroidManifest.xml:35:5-84
+	android:name
+		ADDED from D:\myFile\BLE_SPP\Application\src\main\AndroidManifest.xml:35:22-81
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from D:\myFile\BLE_SPP\Application\src\main\AndroidManifest.xml:36:5-81
+	android:name
+		ADDED from D:\myFile\BLE_SPP\Application\src\main\AndroidManifest.xml:36:22-78
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from D:\myFile\BLE_SPP\Application\src\main\AndroidManifest.xml:37:5-80
+	android:name
+		ADDED from D:\myFile\BLE_SPP\Application\src\main\AndroidManifest.xml:37:22-77
+uses-feature#android.hardware.bluetooth_le
+ADDED from D:\myFile\BLE_SPP\Application\src\main\AndroidManifest.xml:39:5-41:35
+	android:required
+		ADDED from D:\myFile\BLE_SPP\Application\src\main\AndroidManifest.xml:41:9-32
+	android:name
+		ADDED from D:\myFile\BLE_SPP\Application\src\main\AndroidManifest.xml:40:9-53
+uses-feature#android.bluetooth.le
+ADDED from D:\myFile\BLE_SPP\Application\src\main\AndroidManifest.xml:42:5-44:35
+	android:required
+		ADDED from D:\myFile\BLE_SPP\Application\src\main\AndroidManifest.xml:44:9-32
+	android:name
+		ADDED from D:\myFile\BLE_SPP\Application\src\main\AndroidManifest.xml:43:9-44
+application
+ADDED from D:\myFile\BLE_SPP\Application\src\main\AndroidManifest.xml:46:5-83:19
+MERGED from [com.android.support:support-v13:24.1.1] C:\Users\uidp5437\.android\build-cache\d4788ea423cd5ada2c1422718a607877a6c056e2\output\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:cardview-v7:24.1.1] C:\Users\uidp5437\.android\build-cache\78678efabea200db84d9bcce159abf04d01826cd\output\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:design:26.0.0-alpha1] C:\Users\uidp5437\.android\build-cache\b80f675d19fa3ab29d87919a2051df9236b5ea68\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:appcompat-v7:26.0.0-alpha1] C:\Users\uidp5437\.android\build-cache\78aad3809c0cad9fab3e744d4cf9b49608e14943\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:animated-vector-drawable:26.0.0-alpha1] C:\Users\uidp5437\.android\build-cache\2cfc389a0f7008d2d5e5d2f07c052a1339b3a470\output\AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:support-vector-drawable:26.0.0-alpha1] C:\Users\uidp5437\.android\build-cache\149f1a195c324a3f6c157ca8034abdf8b0d4d72d\output\AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:transition:26.0.0-alpha1] C:\Users\uidp5437\.android\build-cache\2572ec6f0f2fadb32b9a1e72a8076a55af7a96b2\output\AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:support-v4:26.0.0-alpha1] C:\Users\uidp5437\.android\build-cache\c2591804b6b10de219d72785161e9419b878745a\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-media-compat:26.0.0-alpha1] C:\Users\uidp5437\.android\build-cache\347f5d413e1ffbbadb8b415ae7c99e4363ba4596\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-fragment:26.0.0-alpha1] C:\Users\uidp5437\.android\build-cache\f96ce3eb5a3bb8011def74311a493c06749322eb\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-ui:26.0.0-alpha1] C:\Users\uidp5437\.android\build-cache\05ecd668831fb3d30d26d37193547070deb27090\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-utils:26.0.0-alpha1] C:\Users\uidp5437\.android\build-cache\626b66c64b33db7ddf184e751f6b626969c218ae\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-compat:26.0.0-alpha1] C:\Users\uidp5437\.android\build-cache\719a9251fd2fdddb4ae8b2a5db3a5abde16d6df0\output\AndroidManifest.xml:29:5-20
+	android:label
+		ADDED from D:\myFile\BLE_SPP\Application\src\main\AndroidManifest.xml:48:9-41
+	android:icon
+		ADDED from D:\myFile\BLE_SPP\Application\src\main\AndroidManifest.xml:47:9-45
+	android:theme
+		ADDED from D:\myFile\BLE_SPP\Application\src\main\AndroidManifest.xml:49:9-56
+activity#com.smartwebee.android.blespp.DeviceScanActivity
+ADDED from D:\myFile\BLE_SPP\Application\src\main\AndroidManifest.xml:50:9-57:20
+	android:label
+		ADDED from D:\myFile\BLE_SPP\Application\src\main\AndroidManifest.xml:52:13-45
+	android:name
+		ADDED from D:\myFile\BLE_SPP\Application\src\main\AndroidManifest.xml:51:13-76
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from D:\myFile\BLE_SPP\Application\src\main\AndroidManifest.xml:53:13-56:29
+action#android.intent.action.MAIN
+ADDED from D:\myFile\BLE_SPP\Application\src\main\AndroidManifest.xml:54:17-69
+	android:name
+		ADDED from D:\myFile\BLE_SPP\Application\src\main\AndroidManifest.xml:54:25-66
+category#android.intent.category.LAUNCHER
+ADDED from D:\myFile\BLE_SPP\Application\src\main\AndroidManifest.xml:55:17-77
+	android:name
+		ADDED from D:\myFile\BLE_SPP\Application\src\main\AndroidManifest.xml:55:27-74
+activity#com.smartwebee.android.blespp.BleSppActivity
+ADDED from D:\myFile\BLE_SPP\Application\src\main\AndroidManifest.xml:58:9-81
+	android:name
+		ADDED from D:\myFile\BLE_SPP\Application\src\main\AndroidManifest.xml:58:19-78
+activity#cn.itcast.tabnavtest.MainActivity
+ADDED from D:\myFile\BLE_SPP\Application\src\main\AndroidManifest.xml:60:9-62:48
+	android:theme
+		ADDED from D:\myFile\BLE_SPP\Application\src\main\AndroidManifest.xml:62:13-45
+	android:name
+		ADDED from D:\myFile\BLE_SPP\Application\src\main\AndroidManifest.xml:61:13-61
+activity#com.smartwebee.android.blespp.GPS_DATA
+ADDED from D:\myFile\BLE_SPP\Application\src\main\AndroidManifest.xml:64:9-66:39
+	android:label
+		ADDED from D:\myFile\BLE_SPP\Application\src\main\AndroidManifest.xml:66:13-36
+	android:name
+		ADDED from D:\myFile\BLE_SPP\Application\src\main\AndroidManifest.xml:65:13-37
+service#com.smartwebee.android.blespp.BluetoothLeService
+ADDED from D:\myFile\BLE_SPP\Application\src\main\AndroidManifest.xml:68:9-70:38
+	android:enabled
+		ADDED from D:\myFile\BLE_SPP\Application\src\main\AndroidManifest.xml:70:13-35
+	android:name
+		ADDED from D:\myFile\BLE_SPP\Application\src\main\AndroidManifest.xml:69:13-76
+service#com.smartwebee.android.blespp.GPS_DATA_Service
+ADDED from D:\myFile\BLE_SPP\Application\src\main\AndroidManifest.xml:72:9-74:38
+	android:enabled
+		ADDED from D:\myFile\BLE_SPP\Application\src\main\AndroidManifest.xml:74:13-35
+	android:name
+		ADDED from D:\myFile\BLE_SPP\Application\src\main\AndroidManifest.xml:73:13-45
+receiver#com.smartwebee.android.blespp.SaveDataReceiver
+ADDED from D:\myFile\BLE_SPP\Application\src\main\AndroidManifest.xml:76:9-82:20
+	android:enabled
+		ADDED from D:\myFile\BLE_SPP\Application\src\main\AndroidManifest.xml:78:13-35
+	android:name
+		ADDED from D:\myFile\BLE_SPP\Application\src\main\AndroidManifest.xml:77:13-45
+intent-filter#ACTION_TO_SAVE
+ADDED from D:\myFile\BLE_SPP\Application\src\main\AndroidManifest.xml:79:13-81:29
+action#ACTION_TO_SAVE
+ADDED from D:\myFile\BLE_SPP\Application\src\main\AndroidManifest.xml:80:17-57
+	android:name
+		ADDED from D:\myFile\BLE_SPP\Application\src\main\AndroidManifest.xml:80:25-54
+uses-sdk
+INJECTED from D:\myFile\BLE_SPP\Application\src\main\AndroidManifest.xml reason: use-sdk injection requested
+MERGED from [com.android.support:support-v13:24.1.1] C:\Users\uidp5437\.android\build-cache\d4788ea423cd5ada2c1422718a607877a6c056e2\output\AndroidManifest.xml:21:5-23:55
+MERGED from [com.android.support:cardview-v7:24.1.1] C:\Users\uidp5437\.android\build-cache\78678efabea200db84d9bcce159abf04d01826cd\output\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:design:26.0.0-alpha1] C:\Users\uidp5437\.android\build-cache\b80f675d19fa3ab29d87919a2051df9236b5ea68\output\AndroidManifest.xml:21:5-23:62
+MERGED from [com.android.support:appcompat-v7:26.0.0-alpha1] C:\Users\uidp5437\.android\build-cache\78aad3809c0cad9fab3e744d4cf9b49608e14943\output\AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:animated-vector-drawable:26.0.0-alpha1] C:\Users\uidp5437\.android\build-cache\2cfc389a0f7008d2d5e5d2f07c052a1339b3a470\output\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:26.0.0-alpha1] C:\Users\uidp5437\.android\build-cache\149f1a195c324a3f6c157ca8034abdf8b0d4d72d\output\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:26.0.0-alpha1] C:\Users\uidp5437\.android\build-cache\45766351294a6215d5442166181c0046e8d1ec5d\output\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:26.0.0-alpha1] C:\Users\uidp5437\.android\build-cache\2572ec6f0f2fadb32b9a1e72a8076a55af7a96b2\output\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:26.0.0-alpha1] C:\Users\uidp5437\.android\build-cache\c2591804b6b10de219d72785161e9419b878745a\output\AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-media-compat:26.0.0-alpha1] C:\Users\uidp5437\.android\build-cache\347f5d413e1ffbbadb8b415ae7c99e4363ba4596\output\AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-fragment:26.0.0-alpha1] C:\Users\uidp5437\.android\build-cache\f96ce3eb5a3bb8011def74311a493c06749322eb\output\AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-core-ui:26.0.0-alpha1] C:\Users\uidp5437\.android\build-cache\05ecd668831fb3d30d26d37193547070deb27090\output\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-utils:26.0.0-alpha1] C:\Users\uidp5437\.android\build-cache\626b66c64b33db7ddf184e751f6b626969c218ae\output\AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-compat:26.0.0-alpha1] C:\Users\uidp5437\.android\build-cache\719a9251fd2fdddb4ae8b2a5db3a5abde16d6df0\output\AndroidManifest.xml:21:5-23:58
+	tools:overrideLibrary
+		ADDED from [com.android.support:support-v13:24.1.1] C:\Users\uidp5437\.android\build-cache\d4788ea423cd5ada2c1422718a607877a6c056e2\output\AndroidManifest.xml:23:9-52
+	android:targetSdkVersion
+		INJECTED from D:\myFile\BLE_SPP\Application\src\main\AndroidManifest.xml
+		INJECTED from D:\myFile\BLE_SPP\Application\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from D:\myFile\BLE_SPP\Application\src\main\AndroidManifest.xml
+		INJECTED from D:\myFile\BLE_SPP\Application\src\main\AndroidManifest.xml
+meta-data#android.support.VERSION
+ADDED from [com.android.support:design:26.0.0-alpha1] C:\Users\uidp5437\.android\build-cache\b80f675d19fa3ab29d87919a2051df9236b5ea68\output\AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:appcompat-v7:26.0.0-alpha1] C:\Users\uidp5437\.android\build-cache\78aad3809c0cad9fab3e744d4cf9b49608e14943\output\AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:animated-vector-drawable:26.0.0-alpha1] C:\Users\uidp5437\.android\build-cache\2cfc389a0f7008d2d5e5d2f07c052a1339b3a470\output\AndroidManifest.xml:22:5-24:41
+MERGED from [com.android.support:support-vector-drawable:26.0.0-alpha1] C:\Users\uidp5437\.android\build-cache\149f1a195c324a3f6c157ca8034abdf8b0d4d72d\output\AndroidManifest.xml:22:5-24:41
+MERGED from [com.android.support:recyclerview-v7:26.0.0-alpha1] C:\Users\uidp5437\.android\build-cache\45766351294a6215d5442166181c0046e8d1ec5d\output\AndroidManifest.xml:22:5-24:41
+MERGED from [com.android.support:transition:26.0.0-alpha1] C:\Users\uidp5437\.android\build-cache\2572ec6f0f2fadb32b9a1e72a8076a55af7a96b2\output\AndroidManifest.xml:22:5-24:41
+MERGED from [com.android.support:support-v4:26.0.0-alpha1] C:\Users\uidp5437\.android\build-cache\c2591804b6b10de219d72785161e9419b878745a\output\AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:support-media-compat:26.0.0-alpha1] C:\Users\uidp5437\.android\build-cache\347f5d413e1ffbbadb8b415ae7c99e4363ba4596\output\AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:support-fragment:26.0.0-alpha1] C:\Users\uidp5437\.android\build-cache\f96ce3eb5a3bb8011def74311a493c06749322eb\output\AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:support-core-ui:26.0.0-alpha1] C:\Users\uidp5437\.android\build-cache\05ecd668831fb3d30d26d37193547070deb27090\output\AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:support-core-utils:26.0.0-alpha1] C:\Users\uidp5437\.android\build-cache\626b66c64b33db7ddf184e751f6b626969c218ae\output\AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:support-compat:26.0.0-alpha1] C:\Users\uidp5437\.android\build-cache\719a9251fd2fdddb4ae8b2a5db3a5abde16d6df0\output\AndroidManifest.xml:25:5-27:41
+	android:value
+		ADDED from [com.android.support:design:26.0.0-alpha1] C:\Users\uidp5437\.android\build-cache\b80f675d19fa3ab29d87919a2051df9236b5ea68\output\AndroidManifest.xml:27:9-38
+	android:name
+		ADDED from [com.android.support:design:26.0.0-alpha1] C:\Users\uidp5437\.android\build-cache\b80f675d19fa3ab29d87919a2051df9236b5ea68\output\AndroidManifest.xml:26:9-47
