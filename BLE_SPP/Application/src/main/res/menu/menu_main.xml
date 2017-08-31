@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/save_data"
+        android:orderInCategory="90"
+        android:showAsAction="never"
+        android:title="save" />
+
+    <item
+        android:id="@+id/manager"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="数据管理器" />
+
+</menu>
