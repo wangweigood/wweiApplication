@@ -4,6 +4,7 @@ import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Environment;
+import android.widget.Toast;
 
 import java.io.File;
 import java.io.FileOutputStream;
@@ -22,7 +23,7 @@ public class SaveDataReceiver extends BroadcastReceiver {
     public void onReceive(Context context, Intent intent) {
         final String FILE_NAME = "/received_data.repl";
         String mData;
-        mData = intent.getStringExtra("data");
+        mData = BleSppActivity.bundle.toString();
 
         File sdCardDir = Environment.getExternalStorageDirectory();
         ObjectOutputStream fos = null;
@@ -39,8 +40,11 @@ public class SaveDataReceiver extends BroadcastReceiver {
             ReceivedDataFromBluetooth rdfb = new ReceivedDataFromBluetooth(date, mData);
             fos.writeObject(rdfb);
 
-            Intent updateIntent = new Intent(BluetoothLeService.ACTION_UPDATE);
-            context.sendBroadcast(updateIntent);
+//            Intent updateIntent = new Intent(BluetoothLeService.ACTION_UPDATE);
+//            context.sendBroadcast(updateIntent);
+
+            Toast.makeText(context, "数据保存成功,请打开数据管理器查看!!", Toast.LENGTH_LONG).show();
+
         } catch (IOException e) {
             e.printStackTrace();
         } finally {

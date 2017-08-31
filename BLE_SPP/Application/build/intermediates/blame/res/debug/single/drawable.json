@@ -1,23 +1,11 @@
 [
     {
+        "merged": "D:\\myFile\\BLE_SPP\\Application\\build\\intermediates\\res\\merged\\debug\\drawable\\folder.png",
+        "source": "D:\\myFile\\BLE_SPP\\Application\\src\\main\\res\\drawable\\folder.png"
+    },
+    {
         "merged": "D:\\myFile\\BLE_SPP\\Application\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_spinner_textfield_background_material.xml",
         "source": "C:\\Users\\uidp5437\\.android\\build-cache\\78aad3809c0cad9fab3e744d4cf9b49608e14943\\output\\res\\drawable\\abc_spinner_textfield_background_material.xml"
-    },
-    {
-        "merged": "D:\\myFile\\BLE_SPP\\Application\\build\\intermediates\\res\\merged\\debug\\drawable\\design_bottom_navigation_item_background.xml",
-        "source": "C:\\Users\\uidp5437\\.android\\build-cache\\b80f675d19fa3ab29d87919a2051df9236b5ea68\\output\\res\\drawable\\design_bottom_navigation_item_background.xml"
-    },
-    {
-        "merged": "D:\\myFile\\BLE_SPP\\Application\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_holo_light.xml",
-        "source": "C:\\Users\\uidp5437\\.android\\build-cache\\78aad3809c0cad9fab3e744d4cf9b49608e14943\\output\\res\\drawable\\abc_list_selector_holo_light.xml"
-    },
-    {
-        "merged": "D:\\myFile\\BLE_SPP\\Application\\build\\intermediates\\res\\merged\\debug\\drawable\\notification_icon_background.xml",
-        "source": "C:\\Users\\uidp5437\\.android\\build-cache\\78aad3809c0cad9fab3e744d4cf9b49608e14943\\output\\res\\drawable\\notification_icon_background.xml"
-    },
-    {
-        "merged": "D:\\myFile\\BLE_SPP\\Application\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_item_background_holo_light.xml",
-        "source": "C:\\Users\\uidp5437\\.android\\build-cache\\78aad3809c0cad9fab3e744d4cf9b49608e14943\\output\\res\\drawable\\abc_item_background_holo_light.xml"
     },
     {
         "merged": "D:\\myFile\\BLE_SPP\\Application\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_background_transition_holo_dark.xml",
@@ -36,10 +24,6 @@
         "source": "C:\\Users\\uidp5437\\.android\\build-cache\\78aad3809c0cad9fab3e744d4cf9b49608e14943\\output\\res\\drawable\\abc_ic_go_search_api_material.xml"
     },
     {
-        "merged": "D:\\myFile\\BLE_SPP\\Application\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_borderless_material.xml",
-        "source": "C:\\Users\\uidp5437\\.android\\build-cache\\78aad3809c0cad9fab3e744d4cf9b49608e14943\\output\\res\\drawable\\abc_btn_borderless_material.xml"
-    },
-    {
         "merged": "D:\\myFile\\BLE_SPP\\Application\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_search_api_material.xml",
         "source": "C:\\Users\\uidp5437\\.android\\build-cache\\78aad3809c0cad9fab3e744d4cf9b49608e14943\\output\\res\\drawable\\abc_ic_search_api_material.xml"
     },
@@ -48,24 +32,72 @@
         "source": "C:\\Users\\uidp5437\\.android\\build-cache\\78aad3809c0cad9fab3e744d4cf9b49608e14943\\output\\res\\drawable\\abc_switch_thumb_material.xml"
     },
     {
-        "merged": "D:\\myFile\\BLE_SPP\\Application\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ratingbar_material.xml",
-        "source": "C:\\Users\\uidp5437\\.android\\build-cache\\78aad3809c0cad9fab3e744d4cf9b49608e14943\\output\\res\\drawable\\abc_ratingbar_material.xml"
-    },
-    {
         "merged": "D:\\myFile\\BLE_SPP\\Application\\build\\intermediates\\res\\merged\\debug\\drawable\\design_fab_background.xml",
         "source": "C:\\Users\\uidp5437\\.android\\build-cache\\b80f675d19fa3ab29d87919a2051df9236b5ea68\\output\\res\\drawable\\design_fab_background.xml"
     },
     {
-        "merged": "D:\\myFile\\BLE_SPP\\Application\\build\\intermediates\\res\\merged\\debug\\drawable\\notification_tile_bg.xml",
-        "source": "C:\\Users\\uidp5437\\.android\\build-cache\\78aad3809c0cad9fab3e744d4cf9b49608e14943\\output\\res\\drawable\\notification_tile_bg.xml"
+        "merged": "D:\\myFile\\BLE_SPP\\Application\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_arrow_drop_right_black_24dp.xml",
+        "source": "C:\\Users\\uidp5437\\.android\\build-cache\\78aad3809c0cad9fab3e744d4cf9b49608e14943\\output\\res\\drawable\\abc_ic_arrow_drop_right_black_24dp.xml"
     },
     {
         "merged": "D:\\myFile\\BLE_SPP\\Application\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_edit_text_material.xml",
         "source": "C:\\Users\\uidp5437\\.android\\build-cache\\78aad3809c0cad9fab3e744d4cf9b49608e14943\\output\\res\\drawable\\abc_edit_text_material.xml"
     },
     {
-        "merged": "D:\\myFile\\BLE_SPP\\Application\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_arrow_drop_right_black_24dp.xml",
-        "source": "C:\\Users\\uidp5437\\.android\\build-cache\\78aad3809c0cad9fab3e744d4cf9b49608e14943\\output\\res\\drawable\\abc_ic_arrow_drop_right_black_24dp.xml"
+        "merged": "D:\\myFile\\BLE_SPP\\Application\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_ab_back_material.xml",
+        "source": "C:\\Users\\uidp5437\\.android\\build-cache\\78aad3809c0cad9fab3e744d4cf9b49608e14943\\output\\res\\drawable\\abc_ic_ab_back_material.xml"
+    },
+    {
+        "merged": "D:\\myFile\\BLE_SPP\\Application\\build\\intermediates\\res\\merged\\debug\\drawable\\normal_btn_bg.xml",
+        "source": "D:\\myFile\\BLE_SPP\\Application\\src\\main\\res\\drawable\\normal_btn_bg.xml"
+    },
+    {
+        "merged": "D:\\myFile\\BLE_SPP\\Application\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_seekbar_thumb_material.xml",
+        "source": "C:\\Users\\uidp5437\\.android\\build-cache\\78aad3809c0cad9fab3e744d4cf9b49608e14943\\output\\res\\drawable\\abc_seekbar_thumb_material.xml"
+    },
+    {
+        "merged": "D:\\myFile\\BLE_SPP\\Application\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_textfield_search_material.xml",
+        "source": "C:\\Users\\uidp5437\\.android\\build-cache\\78aad3809c0cad9fab3e744d4cf9b49608e14943\\output\\res\\drawable\\abc_textfield_search_material.xml"
+    },
+    {
+        "merged": "D:\\myFile\\BLE_SPP\\Application\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_check_material.xml",
+        "source": "C:\\Users\\uidp5437\\.android\\build-cache\\78aad3809c0cad9fab3e744d4cf9b49608e14943\\output\\res\\drawable\\abc_btn_check_material.xml"
+    },
+    {
+        "merged": "D:\\myFile\\BLE_SPP\\Application\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_voice_search_api_material.xml",
+        "source": "C:\\Users\\uidp5437\\.android\\build-cache\\78aad3809c0cad9fab3e744d4cf9b49608e14943\\output\\res\\drawable\\abc_ic_voice_search_api_material.xml"
+    },
+    {
+        "merged": "D:\\myFile\\BLE_SPP\\Application\\build\\intermediates\\res\\merged\\debug\\drawable\\design_password_eye.xml",
+        "source": "C:\\Users\\uidp5437\\.android\\build-cache\\b80f675d19fa3ab29d87919a2051df9236b5ea68\\output\\res\\drawable\\design_password_eye.xml"
+    },
+    {
+        "merged": "D:\\myFile\\BLE_SPP\\Application\\build\\intermediates\\res\\merged\\debug\\drawable\\design_bottom_navigation_item_background.xml",
+        "source": "C:\\Users\\uidp5437\\.android\\build-cache\\b80f675d19fa3ab29d87919a2051df9236b5ea68\\output\\res\\drawable\\design_bottom_navigation_item_background.xml"
+    },
+    {
+        "merged": "D:\\myFile\\BLE_SPP\\Application\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_holo_light.xml",
+        "source": "C:\\Users\\uidp5437\\.android\\build-cache\\78aad3809c0cad9fab3e744d4cf9b49608e14943\\output\\res\\drawable\\abc_list_selector_holo_light.xml"
+    },
+    {
+        "merged": "D:\\myFile\\BLE_SPP\\Application\\build\\intermediates\\res\\merged\\debug\\drawable\\notification_icon_background.xml",
+        "source": "C:\\Users\\uidp5437\\.android\\build-cache\\78aad3809c0cad9fab3e744d4cf9b49608e14943\\output\\res\\drawable\\notification_icon_background.xml"
+    },
+    {
+        "merged": "D:\\myFile\\BLE_SPP\\Application\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_item_background_holo_light.xml",
+        "source": "C:\\Users\\uidp5437\\.android\\build-cache\\78aad3809c0cad9fab3e744d4cf9b49608e14943\\output\\res\\drawable\\abc_item_background_holo_light.xml"
+    },
+    {
+        "merged": "D:\\myFile\\BLE_SPP\\Application\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_borderless_material.xml",
+        "source": "C:\\Users\\uidp5437\\.android\\build-cache\\78aad3809c0cad9fab3e744d4cf9b49608e14943\\output\\res\\drawable\\abc_btn_borderless_material.xml"
+    },
+    {
+        "merged": "D:\\myFile\\BLE_SPP\\Application\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ratingbar_material.xml",
+        "source": "C:\\Users\\uidp5437\\.android\\build-cache\\78aad3809c0cad9fab3e744d4cf9b49608e14943\\output\\res\\drawable\\abc_ratingbar_material.xml"
+    },
+    {
+        "merged": "D:\\myFile\\BLE_SPP\\Application\\build\\intermediates\\res\\merged\\debug\\drawable\\notification_tile_bg.xml",
+        "source": "C:\\Users\\uidp5437\\.android\\build-cache\\78aad3809c0cad9fab3e744d4cf9b49608e14943\\output\\res\\drawable\\notification_tile_bg.xml"
     },
     {
         "merged": "D:\\myFile\\BLE_SPP\\Application\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ratingbar_small_material.xml",
@@ -74,10 +106,6 @@
     {
         "merged": "D:\\myFile\\BLE_SPP\\Application\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_colored_material.xml",
         "source": "C:\\Users\\uidp5437\\.android\\build-cache\\78aad3809c0cad9fab3e744d4cf9b49608e14943\\output\\res\\drawable\\abc_btn_colored_material.xml"
-    },
-    {
-        "merged": "D:\\myFile\\BLE_SPP\\Application\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_ab_back_material.xml",
-        "source": "C:\\Users\\uidp5437\\.android\\build-cache\\78aad3809c0cad9fab3e744d4cf9b49608e14943\\output\\res\\drawable\\abc_ic_ab_back_material.xml"
     },
     {
         "merged": "D:\\myFile\\BLE_SPP\\Application\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_holo_dark.xml",
@@ -100,16 +128,8 @@
         "source": "C:\\Users\\uidp5437\\.android\\build-cache\\78aad3809c0cad9fab3e744d4cf9b49608e14943\\output\\res\\drawable\\notification_bg_low.xml"
     },
     {
-        "merged": "D:\\myFile\\BLE_SPP\\Application\\build\\intermediates\\res\\merged\\debug\\drawable\\normal_btn_bg.xml",
-        "source": "D:\\myFile\\BLE_SPP\\Application\\src\\main\\res\\drawable\\normal_btn_bg.xml"
-    },
-    {
         "merged": "D:\\myFile\\BLE_SPP\\Application\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_item_background_holo_dark.xml",
         "source": "C:\\Users\\uidp5437\\.android\\build-cache\\78aad3809c0cad9fab3e744d4cf9b49608e14943\\output\\res\\drawable\\abc_item_background_holo_dark.xml"
-    },
-    {
-        "merged": "D:\\myFile\\BLE_SPP\\Application\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_seekbar_thumb_material.xml",
-        "source": "C:\\Users\\uidp5437\\.android\\build-cache\\78aad3809c0cad9fab3e744d4cf9b49608e14943\\output\\res\\drawable\\abc_seekbar_thumb_material.xml"
     },
     {
         "merged": "D:\\myFile\\BLE_SPP\\Application\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_vector_test.xml",
@@ -118,10 +138,6 @@
     {
         "merged": "D:\\myFile\\BLE_SPP\\Application\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_dialog_material_background.xml",
         "source": "C:\\Users\\uidp5437\\.android\\build-cache\\78aad3809c0cad9fab3e744d4cf9b49608e14943\\output\\res\\drawable\\abc_dialog_material_background.xml"
-    },
-    {
-        "merged": "D:\\myFile\\BLE_SPP\\Application\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_textfield_search_material.xml",
-        "source": "C:\\Users\\uidp5437\\.android\\build-cache\\78aad3809c0cad9fab3e744d4cf9b49608e14943\\output\\res\\drawable\\abc_textfield_search_material.xml"
     },
     {
         "merged": "D:\\myFile\\BLE_SPP\\Application\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_seekbar_tick_mark_material.xml",
@@ -140,16 +156,8 @@
         "source": "D:\\myFile\\BLE_SPP\\Application\\src\\main\\res\\drawable\\edit_box_bg.xml"
     },
     {
-        "merged": "D:\\myFile\\BLE_SPP\\Application\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_check_material.xml",
-        "source": "C:\\Users\\uidp5437\\.android\\build-cache\\78aad3809c0cad9fab3e744d4cf9b49608e14943\\output\\res\\drawable\\abc_btn_check_material.xml"
-    },
-    {
         "merged": "D:\\myFile\\BLE_SPP\\Application\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_radio_material.xml",
         "source": "C:\\Users\\uidp5437\\.android\\build-cache\\78aad3809c0cad9fab3e744d4cf9b49608e14943\\output\\res\\drawable\\abc_btn_radio_material.xml"
-    },
-    {
-        "merged": "D:\\myFile\\BLE_SPP\\Application\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_voice_search_api_material.xml",
-        "source": "C:\\Users\\uidp5437\\.android\\build-cache\\78aad3809c0cad9fab3e744d4cf9b49608e14943\\output\\res\\drawable\\abc_ic_voice_search_api_material.xml"
     },
     {
         "merged": "D:\\myFile\\BLE_SPP\\Application\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_text_cursor_material.xml",
@@ -176,11 +184,11 @@
         "source": "C:\\Users\\uidp5437\\.android\\build-cache\\78aad3809c0cad9fab3e744d4cf9b49608e14943\\output\\res\\drawable\\abc_cab_background_internal_bg.xml"
     },
     {
-        "merged": "D:\\myFile\\BLE_SPP\\Application\\build\\intermediates\\res\\merged\\debug\\drawable\\design_password_eye.xml",
-        "source": "C:\\Users\\uidp5437\\.android\\build-cache\\b80f675d19fa3ab29d87919a2051df9236b5ea68\\output\\res\\drawable\\design_password_eye.xml"
-    },
-    {
         "merged": "D:\\myFile\\BLE_SPP\\Application\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_menu_overflow_material.xml",
         "source": "C:\\Users\\uidp5437\\.android\\build-cache\\78aad3809c0cad9fab3e744d4cf9b49608e14943\\output\\res\\drawable\\abc_ic_menu_overflow_material.xml"
+    },
+    {
+        "merged": "D:\\myFile\\BLE_SPP\\Application\\build\\intermediates\\res\\merged\\debug\\drawable\\file.png",
+        "source": "D:\\myFile\\BLE_SPP\\Application\\src\\main\\res\\drawable\\file.png"
     }
 ]

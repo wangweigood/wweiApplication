@@ -30,7 +30,7 @@ public class PlaceholderFragment1 extends Fragment {
     int current;
     int numColumn;
     List<Map<String, Object>> listItems;
-    SimpleAdapter simpleAdapter;
+    public static SimpleAdapter simpleAdapter;
     Map<String, Object> map;
     int newI;
     GridView gridView;

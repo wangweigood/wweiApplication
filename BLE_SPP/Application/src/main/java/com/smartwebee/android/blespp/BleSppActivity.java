@@ -126,6 +126,7 @@ public class BleSppActivity extends Activity implements View.OnClickListener {
     private final BroadcastReceiver mGattUpdateReceiver = new BroadcastReceiver() {
         @Override
         public void onReceive(Context context, Intent intent) {
+
             final String action = intent.getAction();
             if (BluetoothLeService.ACTION_GATT_CONNECTED.equals(action)) {
 
@@ -148,6 +149,7 @@ public class BleSppActivity extends Activity implements View.OnClickListener {
 //                      stringBuilder.append(String.format("%02X ", byteChar));
 //                Log.v("log",stringBuilder.toString());
                 displayData(intent.getByteArrayExtra(BluetoothLeService.EXTRA_DATA));
+
             } else if (BluetoothLeService.ACTION_WRITE_SUCCESSFUL.equals(action)) {
                 mSendBytes.setText(sendBytes + " ");
                 if (sendDataLen > 0) {
@@ -259,6 +261,33 @@ public class BleSppActivity extends Activity implements View.OnClickListener {
         // 1000，延时1秒后执行。
         // 1000，每隔2秒执行1次task。
         timer.schedule(task, 1000, 1000);
+
+        TimerTask task = new TimerTask() {
+            @Override
+            public void run() {
+
+                String strmData = mData.toString();
+                Log.e("================", "" + mData.length());
+                char[] chars = strmData.toCharArray();
+                for (int i = 0; i <= chars.length - 4; i++) {
+                    String str1 = new String(chars, i, 4);
+
+                    if (str1.equals("aa5a")) {
+                        mData.delete(0, i);
+                        String str2 = new String(chars, i + 4, chars.length - (i + 4));
+                        char[] chars1 = str2.toCharArray();
+                        parse(chars1);
+
+                        break;
+                    }
+                }
+            }
+        };
+        Timer timer = new Timer();
+        // 参数：
+        // 1000，延时1秒后执行。
+        // 1000，每隔2秒执行1次task。
+        timer.schedule(task, 3000, 3000);
 
         getActionBar().setTitle(mDeviceName);
         getActionBar().setDisplayHomeAsUpEnabled(true);
@@ -398,7 +427,12 @@ public class BleSppActivity extends Activity implements View.OnClickListener {
         byte[] buf = new byte[s.length() / 2];
         for (int i = 0; i < buf.length; i++) {
             try {
-                buf[i] = (byte) Integer.parseInt(s.substring(i * 2, i * 2 + 2), 16);
+                int x = Integer.parseInt(s.substring(i * 2, i * 2 + 2));
+                if (x < 50 && x >= 40) buf[i] = (byte) (x - 31);
+                else if (x < 40) buf[i] = (byte) (x - 30);
+                else if (x >= 60) buf[i] = (byte) (x - 51);
+                else if (x < 60 && x >= 50) buf[i] = (byte) (x - 30);
+
             } catch (NumberFormatException e) {
                 e.printStackTrace();
             }
@@ -417,7 +451,7 @@ public class BleSppActivity extends Activity implements View.OnClickListener {
     }
 
     public String bytesToString(byte[] bytes) {
-        final char[] hexArray = "0123456789ABCDEF".toCharArray();
+        final char[] hexArray = "0123456789abcdef".toCharArray();
         char[] hexChars = new char[bytes.length * 2];
         StringBuilder sb = new StringBuilder();
         for (int i = 0; i < bytes.length; i++) {
@@ -427,7 +461,7 @@ public class BleSppActivity extends Activity implements View.OnClickListener {
 
             sb.append(hexChars[i * 2]);
             sb.append(hexChars[i * 2 + 1]);
-            sb.append(' ');
+
         }
         return sb.toString();
     }
@@ -486,22 +520,6 @@ public class BleSppActivity extends Activity implements View.OnClickListener {
         mDataRecvText.setText(mData.toString());
         mRecvBytes.setText(recvBytes + " ");
 
-        String strmData = mData.toString();
-        Log.e("================", "" + mData.length());
-        char[] chars = strmData.toCharArray();
-        for (int i = 0; i <= chars.length - 4; i++) {
-            String str1 = new String(chars, i, 4);
-
-            if (str1.equals("aa5a")) {
-                mData.delete(0, i);
-                String str2 = new String(chars, i + 4, chars.length - (i + 4));
-                char[] chars1 = str2.toCharArray();
-                parse(chars1);
-
-                break;
-            }
-        }
-
     }
 
     @Override
@@ -550,7 +568,7 @@ public class BleSppActivity extends Activity implements View.OnClickListener {
 
             case R.id.save_data_btn:
                 Intent intent = new Intent(BluetoothLeService.ACTION_TO_SAVE);
-                intent.putExtra("data", bundle.toString());
+                //intent.putExtra("data", bundle.toString());
                 sendBroadcast(intent);
                 break;
 
@@ -661,17 +679,47 @@ public class BleSppActivity extends Activity implements View.OnClickListener {
                     byte[] x = stringToBytes(fourHigh);
                     Log.e("==============", "x[0] =" + x[0]);
                     Log.e("==============", "x[1] =" + x[1]);
+                    Log.e("==============", "x.length=" + x.length);
 
-                    String tp = Integer.toHexString((x[0] - 49 & 0x04));
+                    String tp = Integer.toHexString(((x[0]) & 0x04));
                     bundle.putString("tp" + i4, tp);
                     i4++;
 
                     Log.e("==============", "i4=" + i4);
 
-                    String ta = Integer.toHexString((x[0] - 49 & 0x0f));
-                    Log.e("==============", "x[0] - 49 =" + Integer.toHexString((x[0] - 49)));
-                    Log.e("==============", "ta =" + ta);
+                    String ta = Integer.toHexString((x[0] & 0x08));
                     bundle.putString("ta" + i5, ta);
+                    i5++;
+                    mData.delete(0, 28);
+
+                    if (data.length > 28) {
+                        String s = new String(data, 24, 4);
+                        String s1 = new String(data, 28, data.length - 28);
+                        char[] data1 = s1.toCharArray();
+                        if (s.equals("aa5a")) parse(data1);
+                    }
+                    break;
+
+                case "30613033":
+                    if (data.length < 24) {
+                        Log.e("==============", "data.length =" + data.length);
+                        break;
+                    }
+                    String newfrequency = new String(data, 12, 8);
+                    String fourHigh1 = new String(data, 20, 4); //[1:1:1:1…...]ta:tp:taReceived:tpReceived(最高4位)
+                    byte[] x1 = stringToBytes(fourHigh1);
+                    Log.e("==============", "x1[0] =" + x1[0]);
+                    Log.e("==============", "x1[1] =" + x1[1]);
+                    Log.e("==============", "x1.length=" + x1.length);
+
+                    String tp1 = Integer.toHexString(((x1[0]) & 0x04));
+                    bundle.putString("tp" + i4, tp1);
+                    i4++;
+
+                    Log.e("==============", "i4=" + i4);
+
+                    String ta1 = Integer.toHexString((x1[0] & 0x08));
+                    bundle.putString("ta" + i5, ta1);
                     i5++;
                     mData.delete(0, 28);
 
@@ -690,18 +738,19 @@ public class BleSppActivity extends Activity implements View.OnClickListener {
                     }
                     String frequency4 = new String(data, 12, 8);
                     String OK_fs = new String(data, 20, 4); //[1:7]tunedOK:fieldStrength
-                    byte[] x1 = stringToBytes(OK_fs);
-                    String fieldStrength = (x1[0] & 0x07) + "" + (x1[1] & 0x0f);
+                    byte[] newX = stringToBytes(OK_fs);
+                    String fieldStrength = Integer.toHexString(((newX[0]) & 0x07)) +
+                            Integer.toHexString(((newX[1]) & 0x0f));
                     bundle.putString("fieldStrength" + i6, fieldStrength);
                     i6++;
 
                     String noise_multipath = new String(data, 24, 4); //[4:4]noise:multipath
                     byte[] x2 = stringToBytes(noise_multipath);
-                    String noise = (x2[0] & 0x0f) + "";
+                    String noise = Integer.toHexString(((x2[0]) & 0x0f));
                     bundle.putString("noise" + i10, noise);
                     i10++;
 
-                    String multipath = (x2[1] & 0x0f) + "";
+                    String multipath = Integer.toHexString(((x2[0]) & 0x0f));
                     bundle.putString("multipath" + i7, multipath);
                     i7++;
 
@@ -749,10 +798,11 @@ public class BleSppActivity extends Activity implements View.OnClickListener {
                     break;
 
                 default:
+                    mData.delete(0, 8);
                     break;
             }
 
-        } else if (str1.equals("3046")) {
+        } else if (str1.equals("3046") || str1.equals("3066")) {
             switch (str2) {
 
                 case "30363033":
@@ -828,6 +878,17 @@ public class BleSppActivity extends Activity implements View.OnClickListener {
                     }
                     break;
 
+                case "30613031":
+                    if (data.length < 16) break;
+                    String newtpReceived = new String(data, 12, 4);
+                    if (data.length > 20) {
+                        String s = new String(data, 16, 4);
+                        String s1 = new String(data, 20, data.length - 20);
+                        char[] data1 = s1.toCharArray();
+                        if (s.equals("aa5a")) parse(data1);
+                    }
+                    break;
+
                 case "31353132":
                     if (data.length < 60) break;
                     String EonPi = new String(data, 12, 8);
@@ -866,28 +927,28 @@ public class BleSppActivity extends Activity implements View.OnClickListener {
 
                     String point8 = new String(data, 36, 4);//[1:1:1:1:1:1:1:1]lb:tn:ptn:tnr:eon:tmc:mps:listened
                     byte[] x1 = stringToBytes(point8);
-                    String lb = (x1[0] & 0x08) + "";
+                    String lb = Integer.toHexString(((x1[0]) & 0x08));
                     bundle.putString("lb" + i12, lb);
 
-                    String tn = (x1[0] & 0x04) + "";
+                    String tn = Integer.toHexString(((x1[0]) & 0x04));
                     bundle.putString("tn" + i12, tn);
 
-                    String ptn = (x1[0] & 0x02) + "";
+                    String ptn = Integer.toHexString(((x1[0]) & 0x02));
                     bundle.putString("ptn" + i12, ptn);
 
-                    String tnr = (x1[0] & 0x01) + "";
+                    String tnr = Integer.toHexString(((x1[0]) & 0x01));
                     bundle.putString("tnr" + i12, tnr);
 
-                    String eon = (x1[1] & 0x08) + "";
+                    String eon = Integer.toHexString(((x1[1]) & 0x08));
                     bundle.putString("eon" + i12, eon);
 
-                    String tmc = (x1[1] & 0x04) + "";
+                    String tmc = Integer.toHexString(((x1[1]) & 0x04));
                     bundle.putString("tmc" + i12, tmc);
 
-                    String mps = (x1[1] & 0x02) + "";
+                    String mps = Integer.toHexString(((x1[1]) & 0x02));
                     bundle.putString("mps" + i12, mps);
 
-                    String listened = (x1[1] & 0x01) + "";
+                    String listened = Integer.toHexString(((x1[1]) & 0x01));
                     bundle.putString("listened" + i12, listened);
                     i12++;
 
@@ -899,6 +960,62 @@ public class BleSppActivity extends Activity implements View.OnClickListener {
                     String afCorrolateFactor = new String(data, 60, 4);
                     String afCorrolateAvailable = new String(data, 64, 4);
                     String afNextCorrelationTimeout = new String(data, 68, 4);
+
+                    mData.delete(0, 76);
+                    if (data.length > 76) {
+                        String s = new String(data, 72, 4);
+                        String s1 = new String(data, 76, data.length - 76);
+                        char[] data1 = s1.toCharArray();
+                        if (s.equals("aa5a")) parse(data1);
+                    }
+
+                    break;
+
+                case "31633135":
+                    if (data.length < 72) break;
+
+                    frequency1 = new String(data, 12, 8);
+                    Identification = new String(data, 20, 4);
+                    AfFmeGlobalQuality = new String(data, 24, 4);
+                    afWeightedFs = new String(data, 28, 4);
+                    afPiconfidence = new String(data, 32, 4);
+                    bundle.putString("afPiconfidence" + i12, afPiconfidence);
+
+                    point8 = new String(data, 36, 4);//[1:1:1:1:1:1:1:1]lb:tn:ptn:tnr:eon:tmc:mps:listened
+                    x1 = stringToBytes(point8);
+                    lb = Integer.toHexString(((x1[0]) & 0x08));
+                    bundle.putString("lb" + i12, lb);
+
+                    tn = Integer.toHexString(((x1[0]) & 0x04));
+                    bundle.putString("tn" + i12, tn);
+
+                    ptn = Integer.toHexString(((x1[0]) & 0x02));
+                    bundle.putString("ptn" + i12, ptn);
+
+                    tnr = Integer.toHexString(((x1[0]) & 0x01));
+                    bundle.putString("tnr" + i12, tnr);
+
+                    eon = Integer.toHexString(((x1[1]) & 0x08));
+                    bundle.putString("eon" + i12, eon);
+
+                    tmc = Integer.toHexString(((x1[1]) & 0x04));
+                    bundle.putString("tmc" + i12, tmc);
+
+                    mps = Integer.toHexString(((x1[1]) & 0x02));
+                    bundle.putString("mps" + i12, mps);
+
+                    listened = Integer.toHexString(((x1[1]) & 0x01));
+                    bundle.putString("listened" + i12, listened);
+                    i12++;
+
+                    afNeighbourConf = new String(data, 40, 4);
+                    afMethod = new String(data, 44, 4);
+                    afWeightedMp = new String(data, 48, 4);
+                    afWeightedNoise = new String(data, 52, 4);
+                    afWrongPiEvent = new String(data, 56, 4);
+                    afCorrolateFactor = new String(data, 60, 4);
+                    afCorrolateAvailable = new String(data, 64, 4);
+                    afNextCorrelationTimeout = new String(data, 68, 4);
 
                     mData.delete(0, 76);
                     if (data.length > 76) {
@@ -931,6 +1048,16 @@ public class BleSppActivity extends Activity implements View.OnClickListener {
                     }
                     break;
 
+                case "31643030":
+                    aCommand = "delete AF List";
+                    if (data.length > 16) {
+                        String s = new String(data, 12, 4);
+                        String s1 = new String(data, 16, data.length - 16);
+                        char[] data1 = s1.toCharArray();
+                        if (s.equals("aa5a")) parse(data1);
+                    }
+                    break;
+
                 case "32343030":
                     String aCommand1 = "clear the concerning page";
                     if (data.length > 16) {
@@ -944,6 +1071,17 @@ public class BleSppActivity extends Activity implements View.OnClickListener {
                 case "31453038":
                     if (data.length < 44) break;
                     String spNames = new String(data, 12, 32);
+                    if (data.length > 48) {
+                        String s = new String(data, 44, 4);
+                        String s1 = new String(data, 48, data.length - 48);
+                        char[] data1 = s1.toCharArray();
+                        if (s.equals("aa5a")) parse(data1);
+                    }
+                    break;
+
+                case "31653038":
+                    if (data.length < 44) break;
+                    spNames = new String(data, 12, 32);
                     if (data.length > 48) {
                         String s = new String(data, 44, 4);
                         String s1 = new String(data, 48, data.length - 48);
@@ -994,6 +1132,7 @@ public class BleSppActivity extends Activity implements View.OnClickListener {
                     break;
 
                 default:
+                    mData.delete(0, 8);
                     break;
             }
         } else if (str1.equals("3230")) {
@@ -1025,10 +1164,10 @@ public class BleSppActivity extends Activity implements View.OnClickListener {
 
                     String mshigh4 = new String(data, 64, 4);//[1:1:1:1…...]ta:tp:taReceived:tpReceived(最高4位)
                     byte[] x = stringToBytes(mshigh4);
-                    String msta = (x[0] & 0x08) + "";
+                    String msta = Integer.toHexString(((x[0]) & 0x08));
                     bundle.putString("msta" + i14, msta);
 
-                    String mstp = (x[0] & 0x04) + "";
+                    String mstp = Integer.toHexString(((x[1]) & 0x04));
                     bundle.putString("mstp" + i14, mstp);
 
                     String Sid = new String(data, 68, 4);
@@ -1073,6 +1212,17 @@ public class BleSppActivity extends Activity implements View.OnClickListener {
                     }
                     break;
 
+                case "35643031":
+                    if (data.length < 16) break;
+                    positionInList = new String(data, 12, 4);
+                    if (data.length > 20) {
+                        String s = new String(data, 16, 4);
+                        String s1 = new String(data, 20, data.length - 20);
+                        char[] data1 = s1.toCharArray();
+                        if (s.equals("aa5a")) parse(data1);
+                    }
+                    break;
+
                 case "32323030":
                     String aCommand = "Init the previous list";
                     if (data.length > 16) {
@@ -1095,6 +1245,7 @@ public class BleSppActivity extends Activity implements View.OnClickListener {
                     break;
 
                 default:
+                    mData.delete(0, 8);
                     break;
 
             }
@@ -1136,6 +1287,18 @@ public class BleSppActivity extends Activity implements View.OnClickListener {
                     }
                     break;
 
+                case "33613033":
+                    if (data.length < 24) break;
+                    news_status = new String(data, 12, 8);
+                    news_PI = new String(data, 20, 4);
+                    if (data.length > 28) {
+                        String s = new String(data, 24, 4);
+                        String s1 = new String(data, 28, data.length - 28);
+                        char[] data1 = s1.toCharArray();
+                        if (s.equals("aa5a")) parse(data1);
+                    }
+                    break;
+
                 case "33423033":
                     if (data.length < 24) break;
                     String weather_status = new String(data, 12, 8);
@@ -1148,10 +1311,35 @@ public class BleSppActivity extends Activity implements View.OnClickListener {
                     }
                     break;
 
+                case "33623033":
+                    if (data.length < 24) break;
+                    weather_status = new String(data, 12, 8);
+                    weather_PI = new String(data, 20, 4);
+                    if (data.length > 28) {
+                        String s = new String(data, 24, 4);
+                        String s1 = new String(data, 28, data.length - 28);
+                        char[] data1 = s1.toCharArray();
+                        if (s.equals("aa5a")) parse(data1);
+                    }
+                    break;
+
+
                 case "33433033":
                     if (data.length < 24) break;
                     String user_pty_status = new String(data, 12, 8);
                     String user_pty_PI = new String(data, 20, 4);
+                    if (data.length > 28) {
+                        String s = new String(data, 24, 4);
+                        String s1 = new String(data, 28, data.length - 28);
+                        char[] data1 = s1.toCharArray();
+                        if (s.equals("aa5a")) parse(data1);
+                    }
+                    break;
+
+                case "33633033":
+                    if (data.length < 24) break;
+                    user_pty_status = new String(data, 12, 8);
+                    user_pty_PI = new String(data, 20, 4);
                     if (data.length > 28) {
                         String s = new String(data, 24, 4);
                         String s1 = new String(data, 28, data.length - 28);
@@ -1171,9 +1359,31 @@ public class BleSppActivity extends Activity implements View.OnClickListener {
                     }
                     break;
 
+                case "34613038":
+                    if (data.length < 44) break;
+                    psName = new String(data, 12, 32);
+                    if (data.length > 48) {
+                        String s = new String(data, 44, 4);
+                        String s1 = new String(data, 48, data.length - 48);
+                        char[] data1 = s1.toCharArray();
+                        if (s.equals("aa5a")) parse(data1);
+                    }
+                    break;
+
                 case "34423038":
                     if (data.length < 44) break;
                     String psName1 = new String(data, 12, 32);
+                    if (data.length > 48) {
+                        String s = new String(data, 44, 4);
+                        String s1 = new String(data, 48, data.length - 48);
+                        char[] data1 = s1.toCharArray();
+                        if (s.equals("aa5a")) parse(data1);
+                    }
+                    break;
+
+                case "34623038":
+                    if (data.length < 44) break;
+                    psName1 = new String(data, 12, 32);
                     if (data.length > 48) {
                         String s = new String(data, 44, 4);
                         String s1 = new String(data, 48, data.length - 48);
@@ -1213,6 +1423,7 @@ public class BleSppActivity extends Activity implements View.OnClickListener {
                     break;
 
                 default:
+                    mData.delete(0, 8);
                     break;
             }
         } else if (str1.equals("3433")) {
@@ -1275,15 +1486,29 @@ public class BleSppActivity extends Activity implements View.OnClickListener {
                     break;
 
                 default:
+                    mData.delete(0, 8);
                     break;
             }
-        } else if (str1.equals("3443")) {
+        } else if (str1.equals("3443") || str1.equals("3463")) {
             switch (str2) {
                 case "34453033":
                     if (data.length < 24) break;
                     String NbOfConnectedTuner = new String(data, 12, 4);
                     String mRdsEnable = new String(data, 16, 4);
                     String mCurrCoverArea = new String(data, 20, 4);
+                    if (data.length > 28) {
+                        String s = new String(data, 24, 4);
+                        String s1 = new String(data, 28, data.length - 28);
+                        char[] data1 = s1.toCharArray();
+                        if (s.equals("aa5a")) parse(data1);
+                    }
+                    break;
+
+                case "34653033":
+                    if (data.length < 24) break;
+                    NbOfConnectedTuner = new String(data, 12, 4);
+                    mRdsEnable = new String(data, 16, 4);
+                    mCurrCoverArea = new String(data, 20, 4);
                     if (data.length > 28) {
                         String s = new String(data, 24, 4);
                         String s1 = new String(data, 28, data.length - 28);
@@ -1305,6 +1530,21 @@ public class BleSppActivity extends Activity implements View.OnClickListener {
                         if (s.equals("aa5a")) parse(data1);
                     }
                     break;
+
+                case "34663034":
+                    if (data.length < 28) break;
+                    mAFMode = new String(data, 12, 4);
+                    mRegionalMode = new String(data, 16, 4);
+                    fmeState = new String(data, 20, 4);
+                    fmeStateTmc = new String(data, 24, 4);
+                    if (data.length > 32) {
+                        String s = new String(data, 28, 4);
+                        String s1 = new String(data, 32, data.length - 32);
+                        char[] data1 = s1.toCharArray();
+                        if (s.equals("aa5a")) parse(data1);
+                    }
+                    break;
+
 
                 case "33373139":
                     if (data.length < 88) break;
@@ -1391,6 +1631,7 @@ public class BleSppActivity extends Activity implements View.OnClickListener {
                     break;
 
                 default:
+                    mData.delete(0, 8);
                     break;
             }
         } else {

@@ -1,4 +1,4 @@
-#Fri Aug 25 11:13:24 CST 2017
+#Thu Aug 31 14:15:29 CST 2017
 base.0=D\:\\myFile\\BLE_SPP\\Application\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\5\\slice_7
 renamed.0=classes.dex
 file.0=D\:\\myFile\\BLE_SPP\\Application\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\5\\slice_7\\classes.dex

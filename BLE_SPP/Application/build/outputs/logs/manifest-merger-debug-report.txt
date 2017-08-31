@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from D:\myFile\BLE_SPP\Application\src\main\AndroidManifest.xml:18:1-85:12
+ADDED from D:\myFile\BLE_SPP\Application\src\main\AndroidManifest.xml:18:1-86:12
 	package
 		ADDED from D:\myFile\BLE_SPP\Application\src\main\AndroidManifest.xml:19:5-44
 	android:versionName
@@ -58,7 +58,7 @@ ADDED from D:\myFile\BLE_SPP\Application\src\main\AndroidManifest.xml:42:5-44:35
 	android:name
 		ADDED from D:\myFile\BLE_SPP\Application\src\main\AndroidManifest.xml:43:9-44
 application
-ADDED from D:\myFile\BLE_SPP\Application\src\main\AndroidManifest.xml:46:5-83:19
+ADDED from D:\myFile\BLE_SPP\Application\src\main\AndroidManifest.xml:46:5-84:19
 MERGED from [com.android.support:support-v13:24.1.1] C:\Users\uidp5437\.android\build-cache\d4788ea423cd5ada2c1422718a607877a6c056e2\output\AndroidManifest.xml:25:5-20
 MERGED from [com.android.support:cardview-v7:24.1.1] C:\Users\uidp5437\.android\build-cache\78678efabea200db84d9bcce159abf04d01826cd\output\AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:design:26.0.0-alpha1] C:\Users\uidp5437\.android\build-cache\b80f675d19fa3ab29d87919a2051df9236b5ea68\output\AndroidManifest.xml:29:5-20
@@ -110,30 +110,34 @@ ADDED from D:\myFile\BLE_SPP\Application\src\main\AndroidManifest.xml:64:9-66:39
 		ADDED from D:\myFile\BLE_SPP\Application\src\main\AndroidManifest.xml:66:13-36
 	android:name
 		ADDED from D:\myFile\BLE_SPP\Application\src\main\AndroidManifest.xml:65:13-37
+activity#cn.itcast.tabnavtest.FileExplorer
+ADDED from D:\myFile\BLE_SPP\Application\src\main\AndroidManifest.xml:67:9-70
+	android:name
+		ADDED from D:\myFile\BLE_SPP\Application\src\main\AndroidManifest.xml:67:19-67
 service#com.smartwebee.android.blespp.BluetoothLeService
-ADDED from D:\myFile\BLE_SPP\Application\src\main\AndroidManifest.xml:68:9-70:38
+ADDED from D:\myFile\BLE_SPP\Application\src\main\AndroidManifest.xml:69:9-71:38
 	android:enabled
-		ADDED from D:\myFile\BLE_SPP\Application\src\main\AndroidManifest.xml:70:13-35
+		ADDED from D:\myFile\BLE_SPP\Application\src\main\AndroidManifest.xml:71:13-35
 	android:name
-		ADDED from D:\myFile\BLE_SPP\Application\src\main\AndroidManifest.xml:69:13-76
+		ADDED from D:\myFile\BLE_SPP\Application\src\main\AndroidManifest.xml:70:13-76
 service#com.smartwebee.android.blespp.GPS_DATA_Service
-ADDED from D:\myFile\BLE_SPP\Application\src\main\AndroidManifest.xml:72:9-74:38
+ADDED from D:\myFile\BLE_SPP\Application\src\main\AndroidManifest.xml:73:9-75:38
 	android:enabled
-		ADDED from D:\myFile\BLE_SPP\Application\src\main\AndroidManifest.xml:74:13-35
+		ADDED from D:\myFile\BLE_SPP\Application\src\main\AndroidManifest.xml:75:13-35
 	android:name
-		ADDED from D:\myFile\BLE_SPP\Application\src\main\AndroidManifest.xml:73:13-45
+		ADDED from D:\myFile\BLE_SPP\Application\src\main\AndroidManifest.xml:74:13-45
 receiver#com.smartwebee.android.blespp.SaveDataReceiver
-ADDED from D:\myFile\BLE_SPP\Application\src\main\AndroidManifest.xml:76:9-82:20
+ADDED from D:\myFile\BLE_SPP\Application\src\main\AndroidManifest.xml:77:9-83:20
 	android:enabled
-		ADDED from D:\myFile\BLE_SPP\Application\src\main\AndroidManifest.xml:78:13-35
+		ADDED from D:\myFile\BLE_SPP\Application\src\main\AndroidManifest.xml:79:13-35
 	android:name
-		ADDED from D:\myFile\BLE_SPP\Application\src\main\AndroidManifest.xml:77:13-45
+		ADDED from D:\myFile\BLE_SPP\Application\src\main\AndroidManifest.xml:78:13-45
 intent-filter#ACTION_TO_SAVE
-ADDED from D:\myFile\BLE_SPP\Application\src\main\AndroidManifest.xml:79:13-81:29
+ADDED from D:\myFile\BLE_SPP\Application\src\main\AndroidManifest.xml:80:13-82:29
 action#ACTION_TO_SAVE
-ADDED from D:\myFile\BLE_SPP\Application\src\main\AndroidManifest.xml:80:17-57
+ADDED from D:\myFile\BLE_SPP\Application\src\main\AndroidManifest.xml:81:17-57
 	android:name
-		ADDED from D:\myFile\BLE_SPP\Application\src\main\AndroidManifest.xml:80:25-54
+		ADDED from D:\myFile\BLE_SPP\Application\src\main\AndroidManifest.xml:81:25-54
 uses-sdk
 INJECTED from D:\myFile\BLE_SPP\Application\src\main\AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [com.android.support:support-v13:24.1.1] C:\Users\uidp5437\.android\build-cache\d4788ea423cd5ada2c1422718a607877a6c056e2\output\AndroidManifest.xml:21:5-23:55

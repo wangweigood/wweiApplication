@@ -68,16 +68,16 @@
         "source": "C:\\Users\\uidp5437\\.android\\build-cache\\78aad3809c0cad9fab3e744d4cf9b49608e14943\\output\\res\\layout\\abc_alert_dialog_material.xml"
     },
     {
-        "merged": "D:\\myFile\\BLE_SPP\\Application\\build\\intermediates\\res\\merged\\debug\\layout\\abc_search_view.xml",
-        "source": "C:\\Users\\uidp5437\\.android\\build-cache\\78aad3809c0cad9fab3e744d4cf9b49608e14943\\output\\res\\layout\\abc_search_view.xml"
+        "merged": "D:\\myFile\\BLE_SPP\\Application\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_part_time.xml",
+        "source": "C:\\Users\\uidp5437\\.android\\build-cache\\78aad3809c0cad9fab3e744d4cf9b49608e14943\\output\\res\\layout\\notification_template_part_time.xml"
     },
     {
         "merged": "D:\\myFile\\BLE_SPP\\Application\\build\\intermediates\\res\\merged\\debug\\layout\\abc_popup_menu_header_item_layout.xml",
         "source": "C:\\Users\\uidp5437\\.android\\build-cache\\78aad3809c0cad9fab3e744d4cf9b49608e14943\\output\\res\\layout\\abc_popup_menu_header_item_layout.xml"
     },
     {
-        "merged": "D:\\myFile\\BLE_SPP\\Application\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_part_time.xml",
-        "source": "C:\\Users\\uidp5437\\.android\\build-cache\\78aad3809c0cad9fab3e744d4cf9b49608e14943\\output\\res\\layout\\notification_template_part_time.xml"
+        "merged": "D:\\myFile\\BLE_SPP\\Application\\build\\intermediates\\res\\merged\\debug\\layout\\abc_search_view.xml",
+        "source": "C:\\Users\\uidp5437\\.android\\build-cache\\78aad3809c0cad9fab3e744d4cf9b49608e14943\\output\\res\\layout\\abc_search_view.xml"
     },
     {
         "merged": "D:\\myFile\\BLE_SPP\\Application\\build\\intermediates\\res\\merged\\debug\\layout\\notification_action_tombstone.xml",
@@ -180,6 +180,10 @@
         "source": "C:\\Users\\uidp5437\\.android\\build-cache\\78aad3809c0cad9fab3e744d4cf9b49608e14943\\output\\res\\layout\\notification_template_media_custom.xml"
     },
     {
+        "merged": "D:\\myFile\\BLE_SPP\\Application\\build\\intermediates\\res\\merged\\debug\\layout\\explorer_line.xml",
+        "source": "D:\\myFile\\BLE_SPP\\Application\\src\\main\\res\\layout\\explorer_line.xml"
+    },
+    {
         "merged": "D:\\myFile\\BLE_SPP\\Application\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_menu_item_layout.xml",
         "source": "C:\\Users\\uidp5437\\.android\\build-cache\\78aad3809c0cad9fab3e744d4cf9b49608e14943\\output\\res\\layout\\abc_action_menu_item_layout.xml"
     },
@@ -194,6 +198,10 @@
     {
         "merged": "D:\\myFile\\BLE_SPP\\Application\\build\\intermediates\\res\\merged\\debug\\layout\\special2.xml",
         "source": "D:\\myFile\\BLE_SPP\\Application\\src\\main\\res\\layout\\special2.xml"
+    },
+    {
+        "merged": "D:\\myFile\\BLE_SPP\\Application\\build\\intermediates\\res\\merged\\debug\\layout\\explorer_main.xml",
+        "source": "D:\\myFile\\BLE_SPP\\Application\\src\\main\\res\\layout\\explorer_main.xml"
     },
     {
         "merged": "D:\\myFile\\BLE_SPP\\Application\\build\\intermediates\\res\\merged\\debug\\layout\\abc_activity_chooser_view.xml",

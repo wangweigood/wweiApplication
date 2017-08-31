@@ -1,4 +1,4 @@
-#Wed Aug 23 16:45:31 CST 2017
+#Tue Aug 29 14:54:04 CST 2017
 base.0=D\:\\myFile\\BLE_SPP\\Application\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_c2f94df039462ca83260dc32e8f4e8289b994fd2
 renamed.1=classes2.dex
 renamed.0=classes.dex

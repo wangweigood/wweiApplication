@@ -64,6 +64,7 @@
         <activity
             android:name=".GPS_DATA"
             android:label="获取的定位信息" />
+        <activity android:name="cn.itcast.tabnavtest.FileExplorer" />
 
         <service
             android:name="com.smartwebee.android.blespp.BluetoothLeService"
